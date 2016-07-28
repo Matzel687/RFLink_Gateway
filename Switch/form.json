@@ -1,0 +1,24 @@
+{
+    "elements":
+    [
+        { "type": "Select", "name": "DeviceType", "caption": "Einheit",
+            "options": [
+                { "label": "NewKaku", "value":  "NewKaku"},
+                { "label": "Kaku", "value": "Kaku" }
+            ]
+        },
+        { "type": "ValidationTextBox", "name": "Adresse", "caption": "Adresse" },
+        { "type": "NumberSpinner", "name": "Taste", "caption": "Taste" }
+    ],
+    "actions":
+    [ 
+            { "type": "Button", "label": "Ein", "onClick": "" }, 
+            { "type": "Button", "label": "Aus", "onClick": "" }
+    ],
+    "status":
+    [
+		{ "code": 101, "icon": "active", "caption": "Instanz wird erstellt!" },
+        { "code": 102, "icon": "active", "caption": "Instanz ist aktiv!" },
+		{ "code": 104, "icon": "inactive", "caption": "Instanz ist inaktiv!" }
+	]
+}
