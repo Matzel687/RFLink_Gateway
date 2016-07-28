@@ -35,21 +35,21 @@ class RFLinkShutter extends RFLinkBase
 	{
 		return $this->ReadPropertyString("GeraeteTyp") . $this->ReadPropertyString("Adresse") . $this->ReadPropertyInteger("Taste");
 	}
-	public function SwitchOn()
+	public function MoveUp()
 	{
 		$this->SendCommand("On");
 		SetValue($this->GetIDForIdent("Status"), 2);
 		$this->SetBuffer("LastComand","2");
 		
 	}
-	public function SwitchOff()
+	public function MoveDown()
 	{
 		$this->SendCommand("Off");
 		SetValue($this->GetIDForIdent("Status"), 1);
 		$this->SetBuffer("LastComand","1");
 	}
 
-	public function SwitchStop()
+	public function MoveStop()
 	{
 		$LastComand = $this->GetBuffer("LastComand");
 		if ($LastComand == 1)
@@ -61,11 +61,11 @@ class RFLinkShutter extends RFLinkBase
 	public function SwitchState($value)
 	{
 		if ($value == 0 )
-			$this->SwitchOn();
+			$this->MoveStop();
 		elseif ($value == 1) 
-		$this->SwitchOff();	
+		$this->MoveDown();	
 		elseif ($value == 2)
-			$this->SwitchOn();
+			$this->MoveUp();
 	}
 	protected function SendCommand($command)
 	{

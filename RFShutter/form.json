@@ -13,9 +13,9 @@
     ],
     "actions":
     [ 
-            { "type": "Button", "label": "Ein", "onClick": "RF_SwitchOn($id);" }, 
-            { "type": "Button", "label": "Aus", "onClick": "RF_SwitchOff($id);" },
-            { "type": "Button", "label": "Stop", "onClick": "RF_SwitchStop($id);" }
+            { "type": "Button", "label": "Ein", "onClick": "RF_MoveUp($id);" }, 
+            { "type": "Button", "label": "Aus", "onClick": "RF_MoveDown($id);" },
+            { "type": "Button", "label": "Stop", "onClick": "RF_MoveStop($id);" }
     ],
     "status":
     [
