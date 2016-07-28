@@ -3,7 +3,7 @@ require_once(__DIR__ . DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."RF_Link_bas
 
 
 
-class RFSwitch extends RF_Link_Base
+class RFSwitch extends RFLinkBase
 {
 	
 	public function Create()
