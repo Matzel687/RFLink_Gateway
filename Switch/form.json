@@ -1,10 +1,7 @@
 {
     "elements":
     [
-
-
-
-        
+        {"type": "Label", "label": "Adresse hier einstellen:" }, 
         { "type": "Select", "name": "GeraeteTyp", "caption": "Geräte Typ",
             "options": [
                 { "label": "NewKaku", "value":  "NewKaku"},

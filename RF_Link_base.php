@@ -1,5 +1,4 @@
 <?
-
 class RFLinkBase extends IPSModule
 {
 	public function Create()
