@@ -19,7 +19,7 @@ class RFLinkShutter extends RFLinkBase
 		{
 			switch($Ident) {
 				case "Status":
-					$this->SwitchState($Value);
+					$this->ShutterState($Value);
 					break;
 				default:
 					throw new Exception("Invalid ident");
@@ -58,7 +58,7 @@ class RFLinkShutter extends RFLinkBase
 			$this->SendCommand("On");
 		SetValue($this->GetIDForIdent("Status"), 0);
 	}
-	public function SwitchState($value)
+	public function ShutterState($value)
 	{
 		if ($value == 0 )
 			$this->MoveStop();
