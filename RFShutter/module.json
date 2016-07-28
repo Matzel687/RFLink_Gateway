@@ -1,0 +1,11 @@
+{
+  "id": "{58C2AD5D-560F-42C6-B653-735FA4DA6CAC}",
+  "name": "RFLinkShutter",
+  "type": 3,
+  "vendor": "RFLink",
+  "aliases": ["RFLinkShutter"],
+  "parentRequirements": ["{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"],
+  "childRequirements": [],
+  "implemented": ["{018EF6B5-AB94-40C6-AA53-46943E824ACF}"],
+  "prefix": "RF"
+}

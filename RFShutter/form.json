@@ -1,0 +1,26 @@
+{
+    "elements":
+    [
+        {"type": "Label", "label": "Adresse hier einstellen:" }, 
+        { "type": "Select", "name": "GeraeteTyp", "caption": "Geräte Typ",
+            "options": [
+                { "label": "NewKaku", "value":  "NewKaku"},
+                { "label": "Kaku", "value": "Kaku" }
+            ]
+        },
+        { "type": "ValidationTextBox", "name": "Adresse", "caption": "Adresse" },
+        { "type": "NumberSpinner", "name": "Taste", "caption": "Taste" }
+    ],
+    "actions":
+    [ 
+            { "type": "Button", "label": "Ein", "onClick": "RF_SwitchOn($id);" }, 
+            { "type": "Button", "label": "Aus", "onClick": "RF_SwitchOff($id);" },
+            { "type": "Button", "label": "Stop", "onClick": "RF_SwitchStop($id);" }
+    ],
+    "status":
+    [
+		{ "code": 101, "icon": "active", "caption": "Instanz wird erstellt!" },
+        { "code": 102, "icon": "active", "caption": "Instanz ist aktiv!" },
+		{ "code": 104, "icon": "inactive", "caption": "Instanz ist inaktiv!" }
+	]
+}
