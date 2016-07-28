@@ -2,7 +2,7 @@
 require_once(__DIR__ . DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."RF_Link_base.php"); 
 //test
 //test
-class RFSwitch extends RFLinkBase
+class RFSwitch extends IPSModule
 {
 	
 	public function Create()
