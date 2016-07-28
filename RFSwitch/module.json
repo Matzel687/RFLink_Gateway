@@ -1,9 +1,9 @@
 {
   "id": "{A54A2ECC-40E2-416F-8C4D-DB846D9A1F6D}",
-  "name": "RF-Link-Switch",
+  "name": "RFLinkSwitch",
   "type": 3,
-  "vendor": "",
-  "aliases": ["RF-Link-Switch"],
+  "vendor": "RFLink",
+  "aliases": ["RFLinkSwitch"],
   "parentRequirements": ["{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"],
   "childRequirements": [],
   "implemented": ["{018EF6B5-AB94-40C6-AA53-46943E824ACF}"],
