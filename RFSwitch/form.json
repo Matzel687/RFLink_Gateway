@@ -13,8 +13,8 @@
     ],
     "actions":
     [ 
-            { "type": "Button", "label": "Ein", "onClick": "" }, 
-            { "type": "Button", "label": "Aus", "onClick": "" }
+            { "type": "Button", "label": "Ein", "onClick": "RF_SwitchOn($id);" }, 
+            { "type": "Button", "label": "Aus", "onClick": "RF_SwitchOff($id);" }
     ],
     "status":
     [

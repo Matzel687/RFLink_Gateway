@@ -14,9 +14,6 @@ class RFLinkSwitch extends RFLinkBase
 
 		$this->RegisterVariableBoolean("Status", "Status", "~Switch");
 		$this->EnableAction("Status");
-		
-		/*$this->RegisterScript("SWITCHON",  "Switch On",  '<? ITSW_SwitchOn(IPS_GetParent($_IPS["SELF"])); ?>'); 
-		$this->RegisterScript("SWITCHOFF", "Switch Off", '<? ITSW_SwitchOff(IPS_GetParent($_IPS["SELF"])); ?>'); */
 	}
 		public function RequestAction($Ident, $Value)
 		{
