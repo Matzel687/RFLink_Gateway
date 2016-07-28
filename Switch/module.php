@@ -1,5 +1,8 @@
 <?
 require_once(__DIR__ . DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."RF_Link_base.php"); 
+
+
+
 class RFSwitch extends RF_Link_Base
 {
 	
